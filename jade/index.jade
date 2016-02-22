@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+html(lang="es")
+  head
+    title Spotify
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="stylesheet" type="text/css" href="css/styles.css")
+    script(src="http://code.jquery.com/jquery-2.2.0.min.js")
+  body
+    #top
+      .grupo
+        .caja.base-80
+          #mostrar-menu
+          h1 Spotify
+        .caja.base-20
+          #mostrar-menu-secundario
+            ul.menu.menu-secundario
+              li: a(href="#") Descargar
+              li: a(href="#") Seguir
+              li: a(href="#") Ir al artista
+              li: a(href="#") Compartir
+              li: a(href="#") Iniciar radio del artista
+    nav#menu-principal
+      ul.menu.menu-principal
+        li: a(href="#") Buscar
+        li: a(href="#") Explorar
+        li: a(href="#") Actividad
+        li: a(href="#") Radio
+        li: a(href="#") Tu musica
+        li: a(href="#") Configuración
+    header#header
+      .grupo
+        .caja
+          .artista
+            img.artista__imagen(src="img/carlos.jpg")
+            h2.artista__nombre Carlos Vives
+            button.artista__seguir Seguir
+            p.artista__seguidores 1177 294 seguidores
+      .grupo
+        .caja.total
+          .conexion
+            button.modo-aleatoria Modo Aleatorio
+        .caja.base-80
+          p.conexion__mensaje Disponible sin la conexion
+        .caja.base-20
+          input(type="checkbox")
+    main#main
+      .grupo.canciones
+        .caja
+          h2.canciones__titulo Canciones en tu música
+          - for(var i=0 ; i<10 ; i++)
+            .grupo.cancion
+              .caja.base-80
+                h3.cancion__titulo La gota fria
+                p.cancion__artista Carlos Vives
+              .caja.base-20
+                .cancion__opciones
+    footer#foooter
+      .grupo.reproductor
+        .caja.base-20
+          img(src="img/carlos-album.jpg").reproductor__imagen
+        .caja.base-60
+          h3.reproductor__cancion La fuerza del amor
+          p.reproductor__artista Carlos Vives
+        .caja.base-20
+          .reproductor__play
+            .play
