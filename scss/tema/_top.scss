@@ -1,3 +1,17 @@
 #top{
 	background: red;
+	height: 3rem;
+	line-height: 3rem;
+	h1{
+		//visibility: hidden
+		display: inline-block;
+	}
+}
+
+#mostrar-menu{
+	//@include mostrar-menu(#fff,.9em);
+	display: inline-block;
+}
+.icon-menu{
+	color: #fff;
 }
